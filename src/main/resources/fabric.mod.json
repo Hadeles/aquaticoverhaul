@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "aquaticoverhaul",
+	"version": "${version}",
+	"name": "Aquatic Overhaul",
+	"description": "This is a mod made for a school assignment, themed around water.",
+	"authors": [
+		"Hadeles"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/aquaticoverhaul/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hadeles.aquaticoverhaul.AquaticOverhaul"
+		],
+		"client": [
+			"net.hadeles.aquaticoverhaul.AquaticOverhaulClient"
+		],
+		"fabric-datagen": [
+			"net.hadeles.aquaticoverhaul.AquaticOverhaulDataGenerator"
+		]
+	},
+	"mixins": [
+		"aquaticoverhaul.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
