@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "G": {
+      "item": "aquaticoverhaul:glowstick"
+    }
+  },
+  "pattern": [
+    "GLG",
+    "LWL",
+    "GLG"
+  ],
+  "result": {
+    "item": "aquaticoverhaul:aeroaquatic_block",
+    "count": 8
+  }
+}

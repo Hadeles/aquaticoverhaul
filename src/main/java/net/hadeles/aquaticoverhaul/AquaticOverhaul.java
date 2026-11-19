@@ -2,6 +2,8 @@ package net.hadeles.aquaticoverhaul;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.hadeles.aquaticoverhaul.block.ModBlocks;
+import net.hadeles.aquaticoverhaul.item.ModItems;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -14,6 +16,9 @@ public class AquaticOverhaul implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
+
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {
