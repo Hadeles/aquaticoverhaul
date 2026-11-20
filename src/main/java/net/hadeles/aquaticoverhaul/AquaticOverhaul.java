@@ -2,8 +2,10 @@ package net.hadeles.aquaticoverhaul;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.hadeles.aquaticoverhaul.block.ModBlocks;
 import net.hadeles.aquaticoverhaul.item.ModItems;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -19,7 +21,10 @@ public class AquaticOverhaul implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AEROAQUATIC_BLOCK, RenderLayer.getTranslucent());
 	}
+
+
 
 	public static Identifier id(String path) {
 		return new Identifier(MOD_ID, path);

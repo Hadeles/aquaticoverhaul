@@ -15,7 +15,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block AEROAQUATIC_BLOCK = RegisterBlock("aeroaquatic_block",
-            new AeroaquaticBlock(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new AeroaquaticBlock(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).solidBlock(Blocks::never).sounds(BlockSoundGroup.AMETHYST_BLOCK).nonOpaque().noCollision().suffocates(Blocks::never).blockVision(Blocks::never)));
 
 
     private static Block RegisterBlock(String name, Block block) {
